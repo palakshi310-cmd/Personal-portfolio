@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio </title>
+    <link rel ="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="#about"><i class="fas fa-user"></i>About</a></li>
+                <li><a href="#services"><i class="fas fa-cogs"></i>Services</a></li>
+                <li><a href="#portfolio"><i class="fas fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i>Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+            <p>MCA Student</p>
+            <h1>Hi,I'm <span>Akshita Pal</span><br>Computer Application Student</h1>
+        </div>
+    </div>
+  </div>
+  <!-- about -->
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-colo-1">
+                <img src="images/photot.png">
+            </div>
+            <div class="about-colo-2">
+                <h1 class="sub-title">About me</h1>
+                <p>"I am a passionate and detail-oriented post-graduate Computer Applications student specializing in backend software development and data analysis. With a strong academic foundation in core computer science concepts, algorithms, and database management, I thrive on turning complex logic into structured, efficient, and clean code.
+My technical expertise spans languages like Java and tools like MySQL, alongside modern web technologies. I am highly interested in building robust backend architectures and translating raw data into actionable insights that drive smart business decisions.
+As an aspiring developer, I am continuously learning, adapting to new technologies, and working on real-world projects. I am currently seeking internship opportunities where I can apply my analytical skills, collaborate with tech teams, and contribute to impactful digital solutions."</p>
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')"><i class="fas fa-laptop-code"></i>Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')"><i class="fas fa-award"></i>Experience</p>
+                        <p class="tab-links" onclick="opentab('education')"><i class="fas fa-graduation-cap"></i>Education</p>
+                     </div>
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Backend Development</span><br>Java Servlets,JSP, and Python programming</li>
+                            <li><span>Database Management</span><br>Writing  optimized SQL queries and MySQL setup</li>
+                            <li><span>Data analysis </span><br>Core Data Structures,Algorithms,and data insights</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025-present</span><br>Master of computer Applications(MCA) - AKTU University</li>
+                            <li><span>Graduation</span><br>Bachelors Degree with Computer Science Foundations</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id ="experience">
+                        <ul>
+                            <li><span>Technical Competitions</span><br>Participated in Poster-Making Competition at IIT</li>
+                            <li><span>Academic Projects</span><br>Developed and documented core technical and foundational projects</li>
+                        </ul>
+                     </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- -----------------services--------------- -->
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title"> My Services</h1>
+        <div class="services-list">
+            <div>
+               <i class="fas fa-database"></i>
+                <h2>Database Management</h2>
+                <p>Designing relational databases, setting up MySQL, and writing optimized SQL queries for data fetching and reporting.</p>
+                     <a href="#">Learn more<i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div>
+              <i class="fas fa-server "></i>
+            <h2>Backend Development</h2>
+            <p>Building secure and scalable server-side logic using core Java,Servlets,JSP, and python components</p>
+            <a href="#">Learn more<i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div>
+        <i class="fas fa-chart-pie "></i>
+        <h2>Data Analysis</h2>
+        <p>Procrssing datasets, analyzing core data patterns, and implementing fundamental algorithms to extract meaningful insights.</p>
+        <a href="#">Learn more<i class="fas fa-arrow-right"></i></a>
+    </div>
+   </div>
+   <!-- -------------------portfolio------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My Work</h1>
+            <div class="work-list">
+    
+    <div class="work">
+        <img src="images/Weather.png" >
+        <div class="layer"></div>
+            <h3>Real-Time Weather App</h3>
+            <p>Fetches dynamic weather data using OpenWeatherMap API with async/await logic.</p>
+           <a href="#"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+    </div>
+
+    <div class="work">
+        <img src="images/Quiz.png" >
+        <div class="layer"></div>
+            <h3>Dynamic Quiz Application</h3>
+            <p>Interactive quiz with question sequencing, score tracking, and real-time DOM updates.</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+    </div>
+
+    <div class="work">
+        <img src="images/Qr code.png" >
+        <div class="layer"></div>
+            <h3>QR Code Generator</h3>
+            <p>Instantly converts user text or URLs into high-quality downloadable QR codes using a utility API.</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+    </div>
+
+    <div class="work">
+        <img src="images/calculator.png" >
+        <div class="layer"></div>
+            <h3>Interactive Calculator</h3>
+            <p>A fully responsive calculator built with CSS Grid and smooth JavaScript event handling.</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+    </div>
+
+</div>
+<a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- -----------------------contact------------ -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>palakshi310@gmail.com </p>
+                    <p><i class="fas fa-phone-alt"></i>+919557616737</p>
+                    <div class="social-icons">
+    <a href="https://www.linkedin.com/in/akshita-pal-54a65638b" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/palakshi310-cmd" target="_blank"><i class="fab fa-github"></i></a>
+</div>
+                </div>
+                <a href="images/AKSHITA PA(CV).pdf" download class="btn btn2">Download CV</a>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name " required>
+                        <input type="email" name ="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit<i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <span id="msg"> </span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Palakshi.All Rights Reserved</p>
+        </div>
+     </div>
+  <script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbwnG7i0SAG5pubq6lMqAK7mqh1tXYDqwN8-0qONSFfcPMYCeWCOOeN0FHt-4xKIJf2lOA/exec';
+	const form = document.forms['submit-to-google-sheet'];
+const msg=document.getElementById("msg");
+	form.addEventListener('submit', e => {
+		e.preventDefault();
+		fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+			.then(response => {
+                msg.innerHTML="Message sent successfully";
+                setTimeout(function(){
+                    msg.innerHTML ="";
+                },5000);
+                form.reset();
+            })
+			.catch(error => console.error('Error!', error.message));
+	});
+</script>
+</body>
+</html>
